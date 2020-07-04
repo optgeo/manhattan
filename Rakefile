@@ -30,6 +30,6 @@ end
 
 desc 'port-forward by serveo'
 task :forward do
-  sh 'ssh -R vt-manhattan:443:localhost:9966 serveo.net'
+  sh 'autossh -M 0 -R vt-manhattan:443:localhost:9966 serveo.net'
 end
 
